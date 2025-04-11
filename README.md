@@ -1,3 +1,5 @@
+![ruby workflow](https://github.com/Myuzu/ruby-driver/actions/workflows/ruby.yml/badge.svg)
+
 :warning: **Fork was made to support Cassandra 5.x, no guarantees. To run tests: `docker-compose up`.**
 
 :warning: **The Ruby driver is in maintenance mode. We are still accepting pull-requests and we will occasionally release critical bug fixes, but no ongoing active development is being done currently.**
