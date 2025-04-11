@@ -1,3 +1,5 @@
+:warning: **Fork was made to support Cassandra 5.x, no guarantees. To run tests: `docker-compose up`.**
+
 :warning: **The Ruby driver is in maintenance mode. We are still accepting pull-requests and we will occasionally release critical bug fixes, but no ongoing active development is being done currently.**
 
 # Datastax Ruby Driver for Apache Cassandra
@@ -41,7 +43,7 @@ This driver works exclusively with the Cassandra Query Language v3 (CQL3) and Ca
 * Ruby (MRI) 2.2, 2.3, 2.4
 * JRuby 9k
 
-__Note__: Rubinius is not supported. 
+__Note__: Rubinius is not supported.
 
 __Note__: Big-endian systems are not supported.
 
@@ -148,9 +150,9 @@ profile at execution time. Get the scoop
 * Default consistency level is now LOCAL_ONE.
 * Enable tcp no-delay by default.
 * Unavailable errors are retried on the next host in the load balancing plan by default.
-* Statement execution no longer retried on timeouts, unless the statement is marked as idempotent in the call to `Cassandra::Session#execute*` or when creating a `Cassandra::Statement` object. 
+* Statement execution no longer retried on timeouts, unless the statement is marked as idempotent in the call to `Cassandra::Session#execute*` or when creating a `Cassandra::Statement` object.
 * `Cassandra::Statements::Batch#add` and `Cassandra::Session#execute*` signatures have changed in how one specifies query parameters. Specify the query parameters array as the value of the arguments key:
- 
+
 ```ruby
 batch.add(query, ['val1', 'val2'])
 # becomes
